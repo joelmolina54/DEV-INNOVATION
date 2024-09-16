@@ -1,221 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEV INNOVATION</title>
-    <!-- incluir el archivo CSS de restablecimiento -->
-    <link rel="stylesheet" href="reset.css">
-    <!-- incluir bootstrap instalado por npm -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DEV INNOVATION</title>
+        <!-- Icono de la pagina -->
+         <link rel="icon" href="img/result_result_logito (1).png" />
+        <!-- incluir el archivo CSS de restablecimiento -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- incluir bootstrap instalado por npm -->
+        <link rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-<body>
-    <!-- header -->
+        <!-- lins de las fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <!-- FONT AWEZOME ICON -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body>
+            <!-- header -->
     <header>
-        <!-- menu de opciones principal -->
-        <nav>
-            <!-- div contenedor de logo de la empresa y nombre -->
-            <div class="logo">
-                <!-- COMO SE LLAMA LA EMPRESA -->
-                <a href="/">DEV INNOVATION</a>
+        <!-- menu de opciones principal con booststrap-->
+        <nav class="navbar navbar-expand-lg navbar-dark  p-3"> 
+            <!-- editando el titulo -->
+            <p class="navbar-brand m-auto"><strong>DEV INNOVATION</strong></p>
+            <!-- Menu hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenedor de la informacoin del menu hamburguesa -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="/servicio1">Diseño y Desarrollo Web</a></li>
+                            <li><a class="dropdown-item" href="/servicio2">Desarrollo de Software</a></li>
+                            <li><a class="dropdown-item" href="/servicio3">Consultorio de Tecnologías</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/consultoria">Consultoría</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <!-- INICIO DE BARRA DE NAV LIST AND OPTIONS -->
-            <ul class="nav-links">
-                <li><a href="/">Inicio</a></li>
-
-                <!-- servicios que ofrece la empresa -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="/servicio1">Diseño y Desarrollo Web</a></li>
-                        <li><a class="dropdown-item" href="/servicio2">Servicio 2</a></li>
-                        <li><a class="dropdown-item" href="/servicio3">Servicio 3</a></li>
-                    </ul>
-                </li>
-
-                <!-- continúa de forma normal la lista -->
-                <li><a href="/proyectos">Proyectos</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/consultoria">Consultoría</a></li>
-                <li><a href="/sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-            </ul>
         </nav>
     </header>
 
-    <!-- Información de la empresa -->
-    <section>
-        <div class="row">
-            <div class="col d-md-4">
-                <p class="font-weight-bold my-5"><strong>DEV INNOVATIONS</strong><br>Soluciones en software 
-                    y asesorías a tu medida, impulsando tu negocio con aplicaciones web 
-                    y de escritorio.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- servicios -->
-    <section>
-        <div class="row">
-            <div class="col">
-                <h2>Servicios</h2>
-                <p>Desarrollo de software, consultoría y asesoría en tecnología</p>
-            </div>
-        </div>
-
-        <!-- servicios que ofrece la empresa -->
-        <div class="row">
-            <!-- servicio número 1 -->
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="Desarrollo de Software a Medida">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo de Software a Medida</h5>
-                        <p class="card-text">Ofrecemos desarrollo de software personalizado para satisfacer las necesidades específicas
-                            de tu empresa. Esto incluye aplicaciones web a medida, aplicaciones móviles para iOS y
-                            Android, y software empresarial como sistemas de gestión de relaciones con clientes (CRM) 
-                            y planificación de recursos empresariales (ERP).</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+            <!-- Información de la empresa -->
+            <section class="description">
+                <div class="container">
+                    <div class="col d-md-4">
+                        <!-- IMAGEN LOGO DE LA EMPRESA -->
+                        <img src="img/result_result_logito (1).png" alt="Logo de la empresa" class="img-fluid">
+                        <p class="font-weight-bold my-5">
+                            Soluciones en software y asesorías a tu medida, impulsando tu negocio con aplicaciones web y de escritorio.
+                        </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- servicio número 2 -->
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="Desarrollo de Software a Medida">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo de Software a Medida</h5>
-                        <p class="card-text">Ofrecemos desarrollo de software personalizado para satisfacer las necesidades específicas
-                            de tu empresa. Esto incluye aplicaciones web a medida, aplicaciones móviles para iOS y
-                            Android, y software empresarial como sistemas de gestión de relaciones con clientes (CRM) 
-                            y planificación de recursos empresariales (ERP).</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+            <!-- servicios -->
+            <section class="container my-5">
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2>Servicios</h2>
+                        <p>Desarrollo de software, consultoría y asesoría en
+                            tecnología</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- servicio número 3 -->
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="Desarrollo de Software a Medida">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo de Software a Medida</h5>
-                        <p class="card-text">Ofrecemos desarrollo de software personalizado para satisfacer las necesidades específicas
-                            de tu empresa. Esto incluye aplicaciones web a medida, aplicaciones móviles para iOS y
-                            Android, y software empresarial como sistemas de gestión de relaciones con clientes (CRM) 
-                            y planificación de recursos empresariales (ERP).</p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- sección de proyectos -->
-    <section>
-        <div class="container">
-            <h2 class="h1-responsive font-weight-bold ">Nuestros Proyectos</h2>
-        </div>
-        <!-- LOS PROYECTOS QUE SE HAN HECHOS SE MOSTRARAN PROYECTOS DE PROGRAMACION HECHOS-->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="" class="card-img-top" alt="Proyecto de Desarrollo de  Software">
-                            <div class="card-body">
-                                <h5 class="card-title">Proyecto de Desarrollo de  Software</h5> 
-                                <p class="card-text">Este es un proyecto de desarrollo de software que se ha realizado
-                                    con éxito. Se trata de una aplicación web que permite a los usuarios realizar
-                                    compras en línea de manera segura y eficiente.</p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
-                            </div>
+                <!-- servicios que ofrece la empresa -->
+                <div class="container my-5">
+                    <div class="row">
+                        <!-- INICIO DEL SERVICIO 1 -->
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img src="path-to-image.jpg" class="card-img-top" alt="Servicio 1">
+                          <div class="card-body">
+                            <h5 class="card-title">Servicio 1</h5>
+                            <p class="card-text">Descripción del servicio 1.</p>
+                            <a href="#" class="btn btn-primary">Saber más</a>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
-                            <img src="" class="card-img-top" alt="Proyecto de Desarrollo de  Software">
-                            <div class="card-body">
-                                <h5 class="card-title">Proyecto de Desarrollo de  Software</h5> 
-                                <p class="card-text">Este es un proyecto de desarrollo de software que se ha realizado
-                                    con éxito. Se trata de una aplicación web que permite a los usuarios realizar
-                                    compras en línea de manera segura y eficiente.</p>
-                                <a href="#" class="btn btn-primary">Ver más</a>
-                            </div>
+                      </div>
+                      <!-- INICIO DEL SERVICIO 2 -->
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img src="path-to-image.jpg" class="card-img-top" alt="Servicio 2">
+                          <div class="card-body">
+                            <h5 class="card-title">Servicio 2</h5>
+                            <p class="card-text">Descripción del servicio 2.</p>
+                            <a href="#" class="btn btn-primary">Saber más</a>
+                          </div>
                         </div>
+                      </div>
+                      <!-- INICIO DEL SERVICIO 3 -->
+                      <div class="col-md-4">
+                        <div class="card">
+                          <img src="path-to-image.jpg" class="card-img-top" alt="Servicio 3">
+                          <div class="card-body">
+                            <h5 class="card-title">Servicio 3</h5>
+                            <p class="card-text">Descripción del servicio 3.</p>
+                            <a href="#" class="btn btn-primary">Saber más</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                <p class="text-final">
+                    Soluciones en software y asesorías a tu medida, impulsando tu negocio con aplicaciones web y de escritorio.
+                </p>
+            </section>
+           
+
+            <!-- consultoria -->
+            <section>
+                <!-- se crea un div que se va a ajustar a todo el contenedor  -->
+                <div>
+                    <!-- titulo de los servicios -->
+                    <h2 class="h1-responsive font-weight-bold  my-5">Nuestra
+                        Consultoria</h2>
+                    <!-- unos párrafos más listas -->
+                    <p>Nuestra consultoría es una empresa que se enfoca en
+                        brindar soluciones
+                        innovadoras y efectivas a nuestros clientes. Nuestra
+                        misión es ayudar a nuestros clientes
+                        a alcanzar sus objetivos y mejorar su negocio.</p>
+                    <p>Nuestra consultoría ofrece servicios de consultoría en
+                        áreas como
+                        <ul>
+                            <li>Desarrollo de software</li>
+                            <li>Desarrollo de aplicaciones móviles</li>
+                            <li>Desarrollo de sitios web</li>
+                            <li>Desarrollo de aplicaciones web</li>
+                        </ul>
+                    </p>
                 </div>
-            </div>
-        </section>
-    </section>
+            </section>
 
-    <!-- consultoria -->
-    <section>
-        <!-- se crea un div que se va a ajustar a todo el contenedor  -->
-        <div class="container">
-            <!-- titulo de los servicios -->
-            <h2 class="h1-responsive font-weight-bold  my-5">Nuestra Consultoria</h2>
-            <!-- unos párrafos más listas -->
-            <p>Nuestra consultoría es una empresa que se enfoca en brindar soluciones
-                innovadoras y efectivas a nuestros clientes. Nuestra misión es ayudar a nuestros clientes
-                a alcanzar sus objetivos y mejorar su negocio.</p>
-            <p>Nuestra consultoría ofrece servicios de consultoría en áreas como
-                <ul>
-                    <li>Desarrollo de software</li>
-                    <li>Desarrollo de aplicaciones móviles</li>
-                    <li>Desarrollo de sitios web</li>
-                    <li>Desarrollo de aplicaciones web</li>
-                </ul>
-            </p>
-        </div>
-    </section>
-
-    <!-- sección sobre los trabajadores de la empresa y sobre la empresa -->
-    <section>
-        <!-- se crea un div que se va a ajustar a todo el contenedor -->
-        <div class="container">
-            <!-- información sobre la empresa y las personas -->
-            <h2 class="h1-responsive font-weight-bold  my-5">Sobre Nosotros</h2>
-            <p>Somos una empresa de consultoría que se enfoca en
-                brindar soluciones innovadoras y efectivas a nuestros clientes. Nuestra misión es
-                ayudar a nuestros clientes a alcanzar sus objetivos y mejorar su negocio.</p>
-            <p>Nuestra empresa cuenta con un equipo de expertos en tecnología 
-                y consultoría que están comprometidos con la calidad y la satisfacción de nuestros
-                clientes.</p>
-        </div>
-    </section>
-    
-    <!-- PARTE DEL PIE DE PÁGINA -->
-    <footer>
-        <!-- contactos -->
-         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="h1-responsive font-weight-bold  my-5">Contactanos</h2>
-                    <p>Correo electrónico: <a href="mailto:info@empresa.com">joelmolina5463@gmail.com</a></p>
-                    <p>Telefono: <a href="tel:+1234567890">+593 963890282</a></p>
-                        <p>Dirección: <a href="https://maps.app.goo.gl/padDmsrcDTnWsdN16"
-                            target="_blank">Calle Girasoles - Barrio Addon Calderon, Manta, Ecuador</a></p>
-
+            <!-- sección sobre los trabajadores de la empresa y sobre la empresa -->
+            <section>
+                <!-- se crea un div que se va a ajustar a todo el contenedor -->
+                <div>
+                    <!-- información sobre la empresa y las personas -->
+                    <h2 class="h1-responsive font-weight-bold  my-5">Sobre
+                        Nosotros</h2>
+                    <p>Somos una empresa de consultoría que se enfoca en
+                        brindar soluciones innovadoras y efectivas a nuestros
+                        clientes. Nuestra misión es
+                        ayudar a nuestros clientes a alcanzar sus objetivos y
+                        mejorar su negocio.</p>
+                    <p>Nuestra empresa cuenta con un equipo de expertos en
+                        tecnología
+                        y consultoría que están comprometidos con la calidad y
+                        la satisfacción de nuestros
+                        clientes.</p>
                 </div>
-            </div>
-         </div>
-        <div class="cta">
-            <a href="/contacto" class="cta-button">Solicita una Consulta</a>
-        </div>
-        <!-- REDES SOCIALES LINKS PARTE DEL PIE DE PÁGINA --> 
-        <div class="social-media">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </div>
-    </footer>
+            </section>
 
-    <!-- SCRIPT DE JAVASCRIPT -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+            <!-- PARTE DEL PIE DE PÁGINA -->
+            <footer class="text-center text-white">
+                <div class="container p-4">
+                  <section class="mb-4">
+                    <a href="#" class="social-media"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-media"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-media"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-media"><i class="fab fa-linkedin-in"></i></a>
+                  </section>
+                  
+                  <section class="cta">
+                    <a href="#" class="cta-button">¡Contáctanos ahora!</a>
+                  </section>
+                  
+                  <section class="mt-4">
+                    <p>&copy; 2024 Dev Innovation. Todos los derechos reservados.</p>
+                  </section>
+                </div>
+              </footer>
+              
+            <!-- SCRIPT DE JAVASCRIPT -->
+             <!-- Booststrap -->
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script
+                src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- ADAPTAR COLOR SEGUN LA IMAGEN -->
+
+        </body>
+    </html>

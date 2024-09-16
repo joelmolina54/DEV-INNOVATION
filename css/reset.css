@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #06051b;
+    border-bottom: 2px solid #f5b425;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav .nav-link {
+    color: #b9b3b3;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f5b425;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #383333;
+    border-radius: 5px;
+    border: 1px solid #f5b425;
+}
+
+
+.dropdown-item:hover {
+    background-color: #f5b425;
+    color: #4b496b;
+    transition: background-color 0.3s ease;
+}
+
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; 
+}
+
+strong {
+    color: #f5b425; 
+    transition: color 0.3s ease; 
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #edecec; /* Color predeterminado para los enlaces de la barra de navegación */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:#f5b425 ; 
+}
+
+.navbar-toggler {
+    border: none;
+    
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,...');
+}
+
+
+.description {
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* gradient en la parte derecha de la imagen */
+    background-image:
+    linear-gradient(to bottom, rgba(27, 6, 43, 0.772), rgba(27, 4, 21, 0.912)),
+    url('../img/document.jfif');
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+}
+
+.description p {
+    margin: 0 auto;
+    font-size: 23px;
+    width: 70%; 
+    max-width: 800px; 
+}
+
+section {
+    padding: 30px 0;
+}
+
+
+.card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #06051b;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #f5b425;
+    border-color: #f5b425;
+}
+
+.btn-primary:hover {
+    background-color: #e09c21;
+    border-color: #e09c21;
+}
+
+
+footer {
+    background-color: #06051b;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.social-media a {
+    color: #f5b425;
+    margin: 0 15px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffffff;
+}
+
+.cta-button {
+    background-color: #f5b425;
+    color: #06051b;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #e09c21;
+    color: #06051b;
+}
+
