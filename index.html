@@ -1,10 +1,12 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DEV INNOVATION</title>
+    <!-- incluir el archivo CSS de restablecimiento -->
+    <link rel="stylesheet" href="reset.css">
     <!-- incluir bootstrap instalado por npm -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
@@ -47,7 +49,7 @@
     <section>
         <div class="row">
             <div class="col d-md-4">
-                <p class="font-weight-bold text-center my-5">DEV INNOVATIONS<br>Soluciones en software 
+                <p class="font-weight-bold my-5"><strong>DEV INNOVATIONS</strong><br>Soluciones en software 
                     y asesorías a tu medida, impulsando tu negocio con aplicaciones web 
                     y de escritorio.</p>
             </div>
@@ -64,9 +66,9 @@
         </div>
 
         <!-- servicios que ofrece la empresa -->
-        <div class="container">
+        <div class="row">
             <!-- servicio número 1 -->
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
                     <img src="" class="card-img-top" alt="Desarrollo de Software a Medida">
                     <div class="card-body">
@@ -81,7 +83,7 @@
             </div>
 
             <!-- servicio número 2 -->
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
                     <img src="" class="card-img-top" alt="Desarrollo de Software a Medida">
                     <div class="card-body">
@@ -96,7 +98,7 @@
             </div>
 
             <!-- servicio número 3 -->
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card" style="width: 18rem;">
                     <img src="" class="card-img-top" alt="Desarrollo de Software a Medida">
                     <div class="card-body">
@@ -113,18 +115,98 @@
     </section>
 
     <!-- sección de proyectos -->
-    <section class="py-5">
+    <section>
         <div class="container">
-            <h2 class="h1-responsive font-weight-bold text-center my-5">Nuestros Proyectos</h2>
+            <h2 class="h1-responsive font-weight-bold ">Nuestros Proyectos</h2>
+        </div>
+        <!-- LOS PROYECTOS QUE SE HAN HECHOS SE MOSTRARAN PROYECTOS DE PROGRAMACION HECHOS-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="Proyecto de Desarrollo de  Software">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto de Desarrollo de  Software</h5> 
+                                <p class="card-text">Este es un proyecto de desarrollo de software que se ha realizado
+                                    con éxito. Se trata de una aplicación web que permite a los usuarios realizar
+                                    compras en línea de manera segura y eficiente.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="" class="card-img-top" alt="Proyecto de Desarrollo de  Software">
+                            <div class="card-body">
+                                <h5 class="card-title">Proyecto de Desarrollo de  Software</h5> 
+                                <p class="card-text">Este es un proyecto de desarrollo de software que se ha realizado
+                                    con éxito. Se trata de una aplicación web que permite a los usuarios realizar
+                                    compras en línea de manera segura y eficiente.</p>
+                                <a href="#" class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- consultoria -->
+    <section>
+        <!-- se crea un div que se va a ajustar a todo el contenedor  -->
+        <div class="container">
+            <!-- titulo de los servicios -->
+            <h2 class="h1-responsive font-weight-bold  my-5">Nuestra Consultoria</h2>
+            <!-- unos párrafos más listas -->
+            <p>Nuestra consultoría es una empresa que se enfoca en brindar soluciones
+                innovadoras y efectivas a nuestros clientes. Nuestra misión es ayudar a nuestros clientes
+                a alcanzar sus objetivos y mejorar su negocio.</p>
+            <p>Nuestra consultoría ofrece servicios de consultoría en áreas como
+                <ul>
+                    <li>Desarrollo de software</li>
+                    <li>Desarrollo de aplicaciones móviles</li>
+                    <li>Desarrollo de sitios web</li>
+                    <li>Desarrollo de aplicaciones web</li>
+                </ul>
+            </p>
         </div>
     </section>
 
+    <!-- sección sobre los trabajadores de la empresa y sobre la empresa -->
+    <section>
+        <!-- se crea un div que se va a ajustar a todo el contenedor -->
+        <div class="container">
+            <!-- información sobre la empresa y las personas -->
+            <h2 class="h1-responsive font-weight-bold  my-5">Sobre Nosotros</h2>
+            <p>Somos una empresa de consultoría que se enfoca en
+                brindar soluciones innovadoras y efectivas a nuestros clientes. Nuestra misión es
+                ayudar a nuestros clientes a alcanzar sus objetivos y mejorar su negocio.</p>
+            <p>Nuestra empresa cuenta con un equipo de expertos en tecnología 
+                y consultoría que están comprometidos con la calidad y la satisfacción de nuestros
+                clientes.</p>
+        </div>
+    </section>
+    
     <!-- PARTE DEL PIE DE PÁGINA -->
     <footer>
+        <!-- contactos -->
+         <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="h1-responsive font-weight-bold  my-5">Contactanos</h2>
+                    <p>Correo electrónico: <a href="mailto:info@empresa.com">info@ empresa.com</a></p>
+                    <p>Telefono: <a href="tel:+1234567890">+123456
+                        7890</a></p>
+                        <p>Dirección: <a href="https://www.google.com/maps/place/123 +Main+St,+Anytown,+CA+12345/@37.7749295,-122 .419415"
+                            target="_blank">123 Main St, Anytown, CA 12345</a></p>
+                </div>
+            </div>
+         </div>
         <div class="cta">
             <a href="/contacto" class="cta-button">Solicita una Consulta</a>
         </div>
-        <!-- REDES SOCIALES LINKS PARTE DEL PIE DE PÁGINA -->
+        <!-- REDES SOCIALES LINKS PARTE DEL PIE DE PÁGINA --> 
         <div class="social-media">
             <a href="https://facebook.com" target="_blank">Facebook</a>
             <a href="https://twitter.com" target="_blank">Twitter</a>
@@ -134,6 +216,6 @@
 
     <!-- SCRIPT DE JAVASCRIPT -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
