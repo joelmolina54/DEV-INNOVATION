@@ -1,9 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
 body {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+/* letras */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+strong{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease; 
+    color: #f5b425;
 }
 
 .navbar-brand {
@@ -33,17 +47,24 @@ body {
     color: #f5b425;
 }
 
+/* Estilo para el menú desplegable (dropdown) */
 .navbar-nav .dropdown-menu {
-    background-color: #383333;
+    background-color: #06051b;
     border-radius: 5px;
     border: 1px solid #f5b425;
 }
 
 
-.dropdown-item:hover {
+/* Estilo para los ítems del dropdown */
+.navbar-nav .dropdown-item {
+    color: #fffbfb;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
     background-color: #f5b425;
-    color: #4b496b;
-    transition: background-color 0.3s ease;
+    color: #06060c; 
+    text-decoration: underline;
 }
 
 
@@ -55,14 +76,10 @@ body {
     margin-left: 15px; 
 }
 
-strong {
-    color: #f5b425; 
-    transition: color 0.3s ease; 
-}
 
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #edecec; /* Color predeterminado para los enlaces de la barra de navegación */
+    color: #edecec; 
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -78,18 +95,21 @@ strong {
     background-image: url('data:image/svg+xml;charset=utf8,...');
 }
 
-
+/* description */
 .description {
-    background-size: cover;
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-attachment: fixed; 
     background-repeat: no-repeat;
-    /* gradient en la parte derecha de la imagen */
-    background-image:
-    linear-gradient(to bottom, rgba(27, 6, 43, 0.772), rgba(27, 4, 21, 0.912)),
-    url('../img/document.jfif');
+    background-image: 
+        linear-gradient(to bottom, rgba(11, 3, 17, 0.772), rgba(26, 7, 21, 0.912)),
+        url('../img/document.jfif');
     text-align: center;
     color: #fff;
     padding: 50px 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    position: relative; /* Necesario para un posicionamiento absoluto de la sección de proyectos */
 }
+
 
 .description img {
     max-width: 100%;
@@ -108,65 +128,199 @@ section {
 }
 
 
+
+/* servicios */
+.container-fluid{
+    background: linear-gradient(to bottom right, #e9f5ff, #ffffff); 
+    padding: 50px 0;
+}
+/* tarjetas o card donde van los servicios */
 .card {
     border: 1px solid #ddd;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
-    color: #06051b;
+    color: #333333;
 }
 
 .card-text {
     font-size: 16px;
+    color: #555555;
 }
 
-.btn-primary {
-    background-color: #f5b425;
-    border-color: #f5b425;
-}
-
-.btn-primary:hover {
-    background-color: #e09c21;
-    border-color: #e09c21;
-}
-
-
-footer {
-    background-color: #06051b;
-    color: #ffffff;
-    padding: 30px 0;
-    text-align: center;
-}
-
-.social-media a {
-    color: #f5b425;
-    margin: 0 15px;
-    font-size: 20px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.social-media a:hover {
-    color: #ffffff;
-}
-
-.cta-button {
-    background-color: #f5b425;
-    color: #06051b;
-    padding: 10px 20px;
+/* Estilos para los botones de servicios */
+.btn-servicios {
+    background-color: #f5b425; 
+    border: none;
+    color: #06051b; 
+    padding: 10px 20px; 
     border-radius: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* tamaño */
+    font-size: 13px;
+    text-decoration: none;
 }
 
-.cta-button:hover {
-    background-color: #e09c21;
-    color: #06051b;
+.btn-servicios:hover {
+    background-color: #1a1b05; 
+    color: #f5b425; 
+    border: 2px solid #f5b425; 
+    text-decoration: none; 
 }
 
+
+/* proyectos */
+#Text{
+    color: #f5b425; 
+}
+#proyectos {
+    background-image: 
+        linear-gradient(to bottom, rgba(19, 5, 30, 0.8), rgba(23, 6, 18, 0.952)),
+        url('../img/document.jfif'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: #fff;
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); 
+}
+
+/* Mejorar la apariencia de las tarjetas de proyectos */
+#proyectos .card {
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    background-color: rgba(44, 36, 36, 0.6);
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ddd;
+}
+
+#proyectos .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+
+#proyectos .card-img-top {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); 
+}
+
+/* pariencia de los botones en los proyectos */
+#proyectos .btn-primary {
+    background-color: #f5b425; 
+    border: none;
+    color: #06051b; 
+    padding: 10px 20px; 
+    border-radius: 25px;
+    text-transform: uppercase; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* tamaño */
+    font-size: 13px;
+}
+
+#proyectos .btn-primary:hover {
+    background-color: #06051b; 
+    color: #f5b425; 
+}
+
+/* Añadir decoración al título */
+#proyectos h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+}
+
+#proyectos h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px; 
+    height: 4px; 
+}
+
+
+/* Sección de consultoría */
+.consultoria-bg {
+    background: linear-gradient(to bottom right, #e9f5ff, #ffffff); 
+    padding: 4rem; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* seccion sobre nosotros */
+/* Sección de Sobre Nosotros */
+.sobre-nosotros {
+    background-color: #f0f8ff; /* Fondo blanco azulado para un contraste suave */
+    color: #06051b; /* Texto oscuro para buena legibilidad */
+    padding: 4rem 2rem; /* Espaciado amplio para que el contenido respire */
+    border-radius: 10px; /* Bordes redondeados para un look moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+    text-align: center; /* Centrar texto para un diseño equilibrado */
+}
+
+.sobre-nosotros h2 {
+    color: #f5b425; /* Color del título para destacar */
+    font-size: 2.5rem; /* Tamaño grande para el título */
+    margin-bottom: 1rem; /* Espaciado inferior para separar del texto */
+}
+
+.sobre-nosotros p {
+    font-size: 1.125rem; /* Tamaño de fuente legible y cómodo */
+    line-height: 1.6; /* Mayor altura de línea para mejor legibilidad */
+    margin-bottom: 1rem; /* Espaciado inferior entre párrafos */
+}
+
+/* Ajustes adicionales si se añaden imágenes o más contenido */
+.sobre-nosotros img {
+    max-width: 100%; /* Asegura que las imágenes no se salgan del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 10px; /* Bordes redondeados para imágenes */
+}
+
+
+/* whatsapp icono */
+.whatsapp-icon {
+    border-radius: 50%;
+    background-color: #25d366; /* Verde de WhatsApp */
+    padding: 8px;
+}
+
+
+/* footer */
+/* Estilos para el footer */
+.footer {
+    background-color: #06051b; 
+    color: #ffffff; 
+    padding: 2rem 1rem; 
+    text-align: center; 
+}
+.footer p {
+    margin: 0; 
+    font-size: 1rem;
+}
+
+.footer .social-icons {
+    margin: 1rem 0; 
+}
+
+.social-icons a {
+    color: #f5b425; 
+    margin: 0 0.5rem; 
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #ffffff;
+}
